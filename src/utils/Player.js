@@ -235,7 +235,7 @@ export default class {
     });
     if (autoplay) {
       this.play();
-      document.title = `${this._currentTrack.name} · ${this._currentTrack.ar[0].name} - YesPlayMusic`;
+      document.title = `${this._currentTrack.name} · ${this._currentTrack.ar[0].name} - Wucs-Music`;
     }
     this.setOutputDevice();
     this._howler.once('end', () => {
@@ -478,14 +478,14 @@ export default class {
   pause() {
     this._howler?.pause();
     this._playing = false;
-    document.title = 'YesPlayMusic';
+    document.title = 'Wucs-Music';
     this._pauseDiscordPresence(this._currentTrack);
   }
   play() {
     if (this._howler?.playing()) return;
     this._howler?.play();
     this._playing = true;
-    document.title = `${this._currentTrack.name} · ${this._currentTrack.ar[0].name} - YesPlayMusic`;
+    document.title = `${this._currentTrack.name} · ${this._currentTrack.ar[0].name} - Wucs-Music`;
     this._playDiscordPresence(this._currentTrack, this.seek());
     if (store.state.lastfm.key !== undefined) {
       trackUpdateNowPlaying({
