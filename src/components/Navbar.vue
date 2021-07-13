@@ -2,7 +2,7 @@
   <div>
     <nav>
       <div class="win32-titlebar">
-        <div class="title">YesPlayMusic</div>
+        <div class="title">Wucs-Music</div>
         <div class="controls">
           <div
             class="button minimize codicon codicon-chrome-minimize"
@@ -77,6 +77,10 @@
       <div v-if="isLooseLoggedIn" class="item" @click="logout">
         <svg-icon icon-class="logout" />
         {{ $t('library.userProfileMenu.logout') }}
+      </div>
+      <div class="item" @click="down">
+        <svg-icon icon-class="down" />
+        下载
       </div>
       <hr />
       <div class="item" @click="toGitHub">
@@ -175,6 +179,9 @@ export default {
       } else {
         this.$router.push({ name: 'login' });
       }
+    },
+    down() {
+      window.open('https://wushuo.top/');
     },
     windowMinimize() {
       ipcRenderer.send('minimize');

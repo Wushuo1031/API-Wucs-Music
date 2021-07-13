@@ -102,7 +102,7 @@ export function initIpcMain(win, store) {
       details: track.name + ' - ' + track.ar.map(ar => ar.name).join(','),
       state: track.al.name,
       largeImageKey: 'logo',
-      largeImageText: 'YesPlayMusic',
+      largeImageText: 'Wucs-Music',
       smallImageKey: 'pause',
       smallImageText: 'Pause',
       instance: true,

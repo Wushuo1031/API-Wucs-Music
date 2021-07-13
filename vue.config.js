@@ -18,9 +18,11 @@ module.exports = {
     },
   },
   pwa: {
-    name: 'YesPlayMusic',
+    name: 'Wucs-Music',
     iconPaths: {
-      favicon32: 'img/icons/favicon-32x32.png',
+      favicon32: 'favicon.ico', //网页图标
+      // maskIcon: 'favicon.ico',
+      // msTileImage: 'favicon.ico',
     },
     themeColor: '#ffffff00',
     manifestOptions: {
@@ -61,15 +63,15 @@ module.exports = {
       nodeIntegration: true,
       externals: ['@revincx/unblockneteasemusic'],
       builderOptions: {
-        productName: 'YesPlayMusic',
-        copyright: 'Copyright © YesPlayMusic',
+        productName: 'Wucs-Music',
+        copyright: 'Copyright © Wucs-Music',
         // compression: "maximum", // 机器好的可以打开，配置压缩，开启后会让 .AppImage 格式的客户端启动缓慢
         asar: true,
         publish: [
           {
             provider: 'github',
-            owner: 'qier222',
-            repo: 'YesPlayMusic',
+            owner: 'wushuo',
+            repo: 'Wucs-Music',
             vPrefixedTagName: true,
             releaseType: 'draft',
           },
@@ -99,7 +101,7 @@ module.exports = {
               arch: ['x64'],
             },
           ],
-          publisherName: 'YesPlayMusic',
+          publisherName: 'Wucs-Music',
           icon: 'build/icons/icon.ico',
           publish: ['github'],
         },

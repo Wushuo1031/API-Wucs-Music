@@ -235,7 +235,7 @@ export default class {
     });
     if (autoplay) {
       this.play();
-      document.title = `${this._currentTrack.name} · ${this._currentTrack.ar[0].name} - Wucs-Music`;
+      document.title = `${this._currentTrack.name} · ${this._currentTrack.ar[0].name} - Wucs-Music`; //正在播放提示
     }
     this.setOutputDevice();
     this._howler.once('end', () => {

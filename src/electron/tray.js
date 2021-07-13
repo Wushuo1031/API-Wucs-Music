@@ -11,7 +11,7 @@ export function createTray(win) {
     });
   let tray = new Tray(icon);
 
-  tray.setToolTip('YesPlayMusic');
+  tray.setToolTip('Wucs-Music'); //豪沃提示
 
   tray.on('click', () => {
     win.show();

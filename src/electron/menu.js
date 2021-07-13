@@ -150,7 +150,7 @@ export function createMenu(win, store) {
               {
                 role: 'window',
                 id: 'window',
-                label: 'YesPlayMusic',
+                label: 'Wucs-Music',
                 type: 'checkbox',
                 checked: true,
                 click: () => {
@@ -183,13 +183,13 @@ export function createMenu(win, store) {
             await shell.openExternal('https://electronjs.org');
           },
         },
-        {
-          label: '开发者工具',
-          accelerator: 'F12',
-          click: () => {
-            win.webContents.openDevTools();
-          },
-        },
+        // {
+        //   label: '开发者工具',
+        //   accelerator: 'F12',
+        //   click: () => {
+        //     win.webContents.openDevTools();
+        //   },
+        // },
       ],
     },
   ];

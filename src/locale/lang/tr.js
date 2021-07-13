@@ -76,11 +76,15 @@ export default {
     login: 'Giriş Yap',
     loginWithEmail: 'Email ile giriş yap',
     loginWithPhone: 'Phone ile giriş yap',
-    notice: `YesPlayMusic hesabınızın hiçbir bilgisini kaydetmeyeceğine dair söz veriyor<br />
-      Şifren MD5 şifreleme ile yerel olarak şifrelenir ve daha sonra NetEase Müzik API'sine gönderilir<br />
-      YesPlayMusic, NetEase Music'in resmi websitesi değildir, lütfen hesap bilgilerinizi girmeden önce dikkatlice düşününüz. Aynı zamanda, Kendi NetEase Musix API'nızı host etmek için <a href="https://github.com/qier222/YesPlayMusic">YesPlayMusic'in GitHub Repo'suna</a> gidebilirsiniz.`,
-    noticeElectron: `YesPlayMusic hesabınızın hiçbir bilgisini kaydetmeyeceğine dair söz veriyor<br />
-      Şifren MD5 şifreleme ile yerel olarak şifrelenir ve daha sonra NetEase Müzik API'sine gönderilir<br />`,
+    notice: `Wucs-Music 承諾不會保存您的任何帳號資訊到雲端。<br />
+        您的密碼會在本地進行 MD5 加密後再傳輸到網易雲 API。<br />
+        Wucs-Music 並非網易雲官方網站，輸入帳號資訊前請慎重考慮。 您也可以前往
+        <a href="https://music.163.com/#/playlist?id=419930425&userid=302785585"
+          >收藏歌单</a
+        >
+        并试听我收藏的歌曲。`,
+    noticeElectron: `您的密碼會在本地進行 MD5 加密後再傳輸到網易雲 API。<br />
+    Wucs-Music 不會傳輸你的帳號數據到任何非網易雲音樂官方的伺服器。<br />`,
   },
   mv: {
     moreVideo: 'Daha Fazla Video',
