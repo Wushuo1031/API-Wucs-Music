@@ -21,8 +21,8 @@ module.exports = {
     name: 'Wucs-Music',
     iconPaths: {
       favicon32: 'favicon.ico', //网页图标
-      // maskIcon: 'favicon.ico',
-      // msTileImage: 'favicon.ico',
+      maskIcon: 'favicon.ico',
+      msTileImage: 'favicon.ico',
     },
     themeColor: '#ffffff00',
     manifestOptions: {
@@ -37,7 +37,7 @@ module.exports = {
       entry: 'src/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Wucs-Music',
+      title: 'WuShuo-Music', //index标题
       chunks: ['main', 'chunk-vendors', 'chunk-common', 'index'],
     },
   },
